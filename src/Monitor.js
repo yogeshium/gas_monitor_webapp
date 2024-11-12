@@ -109,7 +109,7 @@ function Monitor() {
   }, []);
 
   const sendNotification = () => {
-    axios.post('http://localhost:3000/send', {
+    axios.post('https://notify-server-cs3l.onrender.com/send', {
       message: "send notification",
     })
     .then(response => {

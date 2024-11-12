@@ -20,7 +20,7 @@ async function requestPermission() {
         if (token) {
           //We can send token to server
           axios
-            .post("http://localhost:3000/token", {
+            .post("https://notify-server-cs3l.onrender.com/token", {
               token: token,
             })
             .then((response) => {
